@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Minsur.OrdenServicio.Seguridad.Domain.Entities\Minsur.OrdenServicio.Seguridad.Domain.Entities.csproj" />
+    <ProjectReference Include="..\Minsur.OrdenServicio.Domain.Entities\Minsur.OrdenServicio.Domain.Entities.csproj" />
+    <ProjectReference Include="..\Minsur.OrdenServicio.DTO\Minsur.OrdenServicio.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

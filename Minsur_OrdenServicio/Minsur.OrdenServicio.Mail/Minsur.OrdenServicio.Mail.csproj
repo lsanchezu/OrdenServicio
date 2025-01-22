@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Minsur.OrdenServicio.Common\Minsur.OrdenServicio.Common.csproj" />
+    <ProjectReference Include="..\Minsur.OrdenServicio.DTO\Minsur.OrdenServicio.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

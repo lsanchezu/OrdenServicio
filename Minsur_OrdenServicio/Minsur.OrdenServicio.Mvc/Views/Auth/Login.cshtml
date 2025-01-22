@@ -1,0 +1,96 @@
+﻿@model LoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/animate.css" />
+        <link rel="stylesheet" href="~/css/style.css" />
+        <link rel="stylesheet" href="~/lib/ladda/dist/ladda-themeless.min.css" />
+        <link rel="stylesheet" href="~/css/login.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/ladda/dist/ladda-themeless.min.css" />
+        <link rel="stylesheet" href="~/css/animate.css" />
+        <link rel="stylesheet" href="~/css/style.css" />
+        <link rel="stylesheet" href="~/lib/ladda/dist/ladda-themeless.min.css" />
+        <link rel="stylesheet" href="~/css/login.css" />
+    </environment>
+
+</head>
+<body>
+
+    <section class="main">
+        <div class="loginColumns animated fadeInDown" style="max-width:1000px;" >
+            <div class="row">
+                <div class="col-md-7">
+                    @*<div class="titulo-login">
+                        <label> PROYECTOS DE EXPANSIÓN</label><br/>
+
+                        <label>SOLICITUDES DE CONTRATACIÓN DE BIENES Y SERVICIOS </label>
+                    </div>*@
+                   
+                </div>
+                <div class="col-md-5">
+                    <div class="ibox-content form-login">
+                        <div class="login-title">
+                            <img src="~/img/logo-minsur.png" />
+                        </div>
+                        <div class="login-body">
+                            <h2> PROYECTOS DE EXPANSIÓN</h2>
+
+                            <span>SOLICITUDES DE CONTRATACIÓN DE BIENES Y SERVICIOS </span>
+                            @*<hr />*@
+                            <form id="form-login" asp-controller="Auth" asp-action="Autenticar" method="post">
+                                <input type="hidden" asp-for="Url" />
+                                <div class="form-group">
+                                    <input type="text" maxlength="50" placeholder="Usuario" class="form-control" asp-for="Usuario" id="txt_NombreUsuario" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" maxlength="50" placeholder="Contraseña" class="form-control" asp-for="Contrasena" id="txt_Contrasena" />
+                                </div>
+
+                                <p id="idTextMessageError" class="txt" style="color:red;"></p>
+
+                                <button class="ladda-button btn btn-primary block full-width m-b" data-style="expand-left" id="btnIngresar" type="button">Ingresar</button>
+                            </form>
+
+                            <p class="m-t"> <small>BindIT Solutions SAC &copy; @DateTime.Now.Year</small> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/ladda/dist/spin.min.js"></script>
+        <script src="~/lib/ladda/dist/ladda.min.js"></script>
+        <script src="~/lib/ladda/dist/ladda.jquery.min.js"></script>
+        <script src="~/js/login.js"></script>
+    </environment>
+
+    <environment names="Staging,Production">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/ladda/dist/spin.min.js"></script>
+        <script src="~/lib/ladda/dist/ladda.min.js"></script>
+        <script src="~/lib/ladda/dist/ladda.jquery.min.js"></script>
+        <script src="~/js/login.js"></script>
+    </environment>
+
+</body>
+</html>

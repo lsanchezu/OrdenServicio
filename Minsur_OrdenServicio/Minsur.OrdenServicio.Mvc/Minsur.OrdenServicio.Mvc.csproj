@@ -1,0 +1,230 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <!--<AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>-->
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    
+    <Content Remove="%2a%2a\**" />
+    
+    <Content Remove="ClientApp\node_modules\**" />
+    <EmbeddedResource Remove="%2a%2a\**" />
+    <EmbeddedResource Remove="ClientApp\node_modules\**" />
+    <None Remove="%2a%2a\**" />
+    <None Remove="ClientApp\node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="%2a%2a/%2a.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="%2a%2a\%2a.config" />
+    <Content Remove="%2a%2a\%2a.cshtml" />
+    <Content Remove="%2a%2a\%2a.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="%2a%2a/%2a.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="%2a%2a/%2a" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="8.0.8" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.2" />
+    <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="7.0.1" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ClientApp\.babelrc" />
+    <None Include="ClientApp\.gitignore" />
+    <None Include="ClientApp\.postcssrc.js" />
+    <None Include="ClientApp\build\build.js" />
+    <None Include="ClientApp\build\check-versions.js" />
+    <None Include="ClientApp\build\utils.js" />
+    <None Include="ClientApp\build\vue-loader.conf.js" />
+    <None Include="ClientApp\build\webpack.base.conf.js" />
+    <None Include="ClientApp\build\webpack.dev.conf.js" />
+    <None Include="ClientApp\build\webpack.prod.conf.js" />
+    <None Include="ClientApp\config\dev.env.js" />
+    <None Include="ClientApp\config\index.js" />
+    <None Include="ClientApp\config\prod.env.js" />
+    <None Include="ClientApp\index-build.html" />
+    <None Include="ClientApp\index.html" />
+    <None Include="ClientApp\README.md" />
+    <None Include="ClientApp\src\App.vue" />
+    <None Include="ClientApp\src\common\swal.alert.js" />
+    <None Include="ClientApp\src\components\shared\CabeceraPagina.vue" />
+    <None Include="ClientApp\src\components\shared\Loading.vue" />
+    <None Include="ClientApp\src\components\SolicitudOrdenServicio\DetalleSolicitudOrdenServicio.vue" />
+    <None Include="ClientApp\src\components\SolicitudOrdenServicio\DocumentoAdjunto.vue" />
+    <None Include="ClientApp\src\components\SolicitudOrdenServicio\SolicitudAutorizacion.vue" />
+    <None Include="ClientApp\src\components\SolicitudOrdenServicio\SolicitudOrdenServicio.vue" />
+    <None Include="ClientApp\src\components\SolicitudOrdenServicio\SolicitudRecomendacion.vue" />
+    <None Include="ClientApp\src\components\SolicitudOrdenServicio\SolicitudValidacion.vue" />
+    <None Include="ClientApp\src\config\app.config.js" />
+    <None Include="ClientApp\src\constants\api.contants.js" />
+    <None Include="ClientApp\src\constants\solicitud.constants.js" />
+    <None Include="ClientApp\src\layouts\AppRoot.vue" />
+    <None Include="ClientApp\src\layouts\Footer.vue" />
+    <None Include="ClientApp\src\layouts\Navigation.vue" />
+    <None Include="ClientApp\src\layouts\RightSidebar.vue" />
+    <None Include="ClientApp\src\layouts\TopNavbar.vue" />
+    <None Include="ClientApp\src\main.js" />
+    <None Include="ClientApp\src\pages\ConsultaPendientes.vue" />
+    <None Include="ClientApp\src\pages\ConsultaSolicitud.vue" />
+    <None Include="ClientApp\src\pages\Dashboard.vue" />
+    <None Include="ClientApp\src\pages\Home.vue" />
+    <None Include="ClientApp\src\pages\RegistroSolicitud.vue" />
+    <None Include="ClientApp\src\router\index.js" />
+    <None Include="ClientApp\src\router\routes.js" />
+    <None Include="ClientApp\src\services\api.service.js" />
+    <None Include="ClientApp\src\services\jwt.service.js" />
+    <None Include="ClientApp\src\services\maestro.service.js" />
+    <None Include="ClientApp\src\services\solicitud.service.js" />
+    <None Include="ClientApp\src\static\customStyle.css" />
+    <None Include="ClientApp\src\static\element-ui\element-variables.scss" />
+    <None Include="ClientApp\src\static\element-ui\theme\alert.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\aside.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\autocomplete.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\badge.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\base.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\breadcrumb-item.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\breadcrumb.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\button-group.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\button.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\card.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\carousel-item.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\carousel.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\cascader.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\checkbox-button.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\checkbox-group.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\checkbox.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\col.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\collapse-item.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\collapse.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\color-picker.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\container.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\date-picker.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\dialog.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\display.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\dropdown-item.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\dropdown-menu.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\dropdown.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\element-variables.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\fonts\element-icons.ttf" />
+    <None Include="ClientApp\src\static\element-ui\theme\fonts\element-icons.woff" />
+    <None Include="ClientApp\src\static\element-ui\theme\footer.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\form-item.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\form.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\header.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\icon.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\index.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\input-number.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\input.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\loading.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\main.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\menu-item-group.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\menu-item.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\menu.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\message-box.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\message.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\notification.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\option-group.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\option.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\pagination.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\popover.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\popper.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\progress.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\radio-button.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\radio-group.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\radio.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\rate.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\reset.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\row.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\scrollbar.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\select-dropdown.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\select.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\slider.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\spinner.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\step.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\steps.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\submenu.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\switch.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\tab-pane.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\table-column.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\table.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\tabs.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\tag.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\time-picker.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\time-select.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\tooltip.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\transfer.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\tree.css" />
+    <None Include="ClientApp\src\static\element-ui\theme\upload.css" />
+    <None Include="ClientApp\src\store\auth\index.js" />
+    <None Include="ClientApp\src\store\auth\types.js" />
+    <None Include="ClientApp\src\store\index.js" />
+    <None Include="ClientApp\src\store\solicitudServicio\actions.js" />
+    <None Include="ClientApp\src\store\solicitudServicio\index.js" />
+    <None Include="ClientApp\src\store\solicitudServicio\mutations.js" />
+    <None Include="ClientApp\src\store\solicitudServicio\state.js" />
+    <None Include="ClientApp\yarn.lock" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
+    <None Include="wwwroot\lib_bower\sweetalert\.editorconfig" />
+    <None Include="wwwroot\lib_bower\sweetalert\.gitignore" />
+    <None Include="wwwroot\lib_bower\sweetalert\.jshintrc" />
+    <None Include="wwwroot\lib_bower\sweetalert\.travis.yml" />
+    <None Include="wwwroot\lib_bower\sweetalert\dev\gulpfile-wrap-template.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\dev\modules\default-params.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\dev\modules\handle-click.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\dev\modules\handle-dom.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\dev\modules\handle-key.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\dev\modules\handle-swal-dom.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\dev\modules\injected-html.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\dev\modules\set-params.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\dev\modules\utils.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\dev\sweetalert.es6.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\dev\sweetalert.scss" />
+    <None Include="wwwroot\lib_bower\sweetalert\dist\sweetalert-dev.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\dist\sweetalert.min.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\example\example.scss" />
+    <None Include="wwwroot\lib_bower\sweetalert\example\images\te-logo-small.svg" />
+    <None Include="wwwroot\lib_bower\sweetalert\gulpfile.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\lib\modules\default-params.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\lib\modules\handle-click.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\lib\modules\handle-dom.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\lib\modules\handle-key.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\lib\modules\handle-swal-dom.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\lib\modules\injected-html.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\lib\modules\set-params.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\lib\modules\utils.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\lib\sweetalert.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\LICENSE" />
+    <None Include="wwwroot\lib_bower\sweetalert\README.md" />
+    <None Include="wwwroot\lib_bower\sweetalert\test\tests.js" />
+    <None Include="wwwroot\lib_bower\sweetalert\themes\facebook\facebook.scss" />
+    <None Include="wwwroot\lib_bower\sweetalert\themes\google\google.scss" />
+    <None Include="wwwroot\lib_bower\sweetalert\themes\twitter\twitter.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Minsur.OrdenServicio.ApiServiceController\Minsur.OrdenServicio.ApiServiceController.csproj" />
+    <ProjectReference Include="..\Minsur.OrdenServicio.DTO\Minsur.OrdenServicio.DTO.csproj" />
+    <ProjectReference Include="..\Minsur.OrdenServicio.Proxies\Minsur.OrdenServicio.Proxies.csproj" />
+    <ProjectReference Include="..\Minsur.OrdenServicio.ServiceController\Minsur.OrdenServicio.ServiceController.csproj" />
+  </ItemGroup>
+
+</Project>

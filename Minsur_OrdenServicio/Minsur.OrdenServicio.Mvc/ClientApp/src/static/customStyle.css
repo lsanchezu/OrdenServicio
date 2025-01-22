@@ -1,0 +1,233 @@
+﻿.el-date-editor.el-input, .el-date-editor.el-input__inner {
+    width: 100%;
+}
+
+.el-dialog__header {
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+.el-dialog__header > h2 {
+    font-weight: 400;
+}
+.el-dialog__body{
+    padding: 10px 20px;
+}
+
+.el-date-editor.error{
+    border: 1px solid #cc5965;
+}
+
+.text-green {
+    color: #1ab394;
+}
+    
+.ibox-title-white {
+    background-color: #ffffff;
+    border-color:#ffffff;
+    color: #676A6C;
+    font-weight: bold;
+}
+
+.ibox-content-white {
+    background-color: #ffffff;
+    border-color:#ffffff;
+    color: #676A6C;
+    font-weight: bold;
+}
+
+.card-title{
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
+    margin-top: 8px;
+}
+.card-content {
+    -webkit-border-radius: 0px 0px 3px 3px;
+    -moz-border-radius: 0px 0px 3px 3px;
+    border-radius: 0px 0px 3px 3px;
+    margin-bottom: 8px;
+    /* padding: 0px; */
+}
+
+.card-title-green {
+    background-color: #19957c;
+    border-color:#19957c;
+    color: #ffffff;
+}
+
+.card-content-green {
+    background-color: #1ab394;
+    border-color:#1ab394;
+    color: #ffffff;
+}
+
+.card-title-red {
+    background-color: #d84352;
+    border-color:#d84352;
+    color: #ffffff;
+}
+
+.card-content-red {
+    background-color: #ed5565;
+    border-color:#ed5565;
+    color: #ffffff;
+}
+
+.car-title-licitacion {
+    background-color: #2279b0;
+    border-color:#2279b0;
+    color: #ffffff;
+}
+
+.card-content-licitacion {
+    background-color: #2c93d3;
+    border-color:#2c93d3;
+    color: #ffffff;
+}
+
+.car-title-preferente {
+    background-color: #32aeb0;
+    border-color:#32aeb0;
+    color: #ffffff;
+}
+
+.card-content-preferente {
+    background-color: #23c6c8;
+    border-color:#23c6c8;
+    color: #ffffff;
+}
+
+.car-title-sole-source {
+    background-color: #d69045;
+    border-color:#d69045;
+    color: #ffffff;
+}
+
+.card-content-sole-source {
+    background-color: #f8ac59;
+    border-color:#f8ac59;
+    color: #ffffff;
+}
+
+.el-dialog__body label{
+    font-weight: bold;
+}
+
+.section-aprobacion {
+    margin: 5px 0px 5px 0px;
+}
+
+.title-aprobacion {
+    border-top: 2px solid #337ab7;
+    padding: 5px 8px;
+    background: #fbfbfcac;
+    border-right:  1px solid rgba(221, 221, 224, 0.5);
+    border-left:  1px solid rgba(221, 221, 224, 0.5);
+    border-bottom:  1px solid rgba(221, 221, 224, 0.5);
+    border-radius: 1px 2px 2px 2px;
+    font-weight: bold;
+
+    /* box-shadow: 
+    0 -6px white,          
+    0 6px white,          
+    2px 0 4px -2px rgba(221, 221, 224, 1), 
+    -2px 0 4px -2px  rgba(221, 221, 224, 1);  */
+}
+
+.content-aprobacion {
+    border:1px solid rgba(221, 221, 224, 0.5);  
+    padding: 10px 8px;
+    /* box-shadow: 0px 0px 8px rgba(221, 221, 224, 0.7) */
+}
+
+.row-aprobacion {
+    padding: 5px 8px;
+    margin-bottom: 5px;
+    height: auto;
+}
+
+.bg-aprobacion {
+    border: 1px solid #fafafa;
+    background: #fafafa;
+}
+
+.row-aprobacion .right {
+    float: right;
+}
+
+#legendContainer {
+    background-color: #fff;
+    padding: 4px;
+    margin-top: 8px;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #E6E6E6;
+    display: inline-block;
+    margin: 5px auto 0px auto;
+}
+
+
+@media (min-width: 1000px) {
+    
+    .el-dialog__headerbtn {
+        top: 10px;
+    }
+
+    .el-dialog__header h2 {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+
+
+    .el-dialog__body {
+        font-size: 11px;
+    }
+
+    .el-dialog__body .ibox-title {
+        padding: 8px 10px 2px;
+        min-height: 35px;
+    }
+
+    .el-dialog__body .ibox-title h5 {
+        font-size: 12px;
+    }
+
+    .el-dialog__body .form-group {
+        margin-bottom: 5px;
+    }
+
+    .el-dialog__body .form-control {
+        height: 30px;
+        font-size: 11px;
+        padding: 2px 5px;
+    }
+
+    .el-dialog__body textarea.form-control {
+        height: auto;
+    }
+
+    .el-dialog__body .ibox {
+        margin-bottom: 5px;
+    }
+
+    .el-dialog__body .ibox-content {
+        padding: 8px 20px;  
+    }
+
+    .el-dialog__body .el-tag {
+        height: 25px;
+        padding: 0px 8px;
+        line-height: 20px;
+        font-size: 11px;
+    }
+
+    .el-dialog__body .el-radio-button__inner {
+        font-size: 11px;
+        padding: 7px 12px;
+    }
+
+    .el-dialog__body .table {
+        margin-bottom: 10px;
+    }
+}

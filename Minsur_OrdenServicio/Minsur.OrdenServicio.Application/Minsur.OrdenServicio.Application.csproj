@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Minsur.OrdenServicio.Common\Minsur.OrdenServicio.Common.csproj" />
+    <ProjectReference Include="..\Minsur.OrdenServicio.Domain.Entities\Minsur.OrdenServicio.Domain.Entities.csproj" />
+    <ProjectReference Include="..\Minsur.OrdenServicio.Domain\Minsur.OrdenServicio.Domain.csproj" />
+    <ProjectReference Include="..\Minsur.OrdenServicio.DTO\Minsur.OrdenServicio.DTO.csproj" />
+    <ProjectReference Include="..\Minsur.OrdenServicio.Mail\Minsur.OrdenServicio.Mail.csproj" />
+    <ProjectReference Include="..\Minsur.OrdenServicio.Seguridad.Domain\Minsur.OrdenServicio.Seguridad.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
